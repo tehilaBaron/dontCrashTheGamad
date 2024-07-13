@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">FirstProject</string>
+    <string name="mode">Mode</string>
+    <string name="speed">Speed</string>
+    <string name="fast">Fast</string>
+    <string name="slow">Slow</string>
+    <string name="button">Buttons</string>
+    <string name="sensor">Sensors</string>
+    <string name="start">New Game</string>
+    <string name="record">Table of records</string>
+    <string name="name">Don\'t crash the GAMAD</string>
+    <string name="leader">LEADER BOARD</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="google_maps_key" translatable="false">secret_google_maps_key</string>
+</resources>

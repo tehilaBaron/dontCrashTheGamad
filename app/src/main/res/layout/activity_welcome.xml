@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/welcome_LBL_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/extra_margin"
+        android:gravity="center"
+        android:text="@string/name"
+        android:textColor="@color/white"
+        android:textSize="@dimen/title_size"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/welcome_IMG_dwarf"
+        android:layout_width="@dimen/welcome_dwarf_size"
+        android:layout_height="@dimen/welcome_dwarf_size"
+        android:layout_below="@+id/welcome_LBL_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="@dimen/bottom_margin_default"
+        app:srcCompat="@drawable/dwarf" />
+
+    <LinearLayout
+        android:id="@+id/speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome_IMG_dwarf"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="@dimen/default_margin">
+
+        <androidx.appcompat.widget.AppCompatToggleButton
+            android:id="@+id/toggle_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/light_blue"
+            android:textOff="@string/slow"
+            android:textOn="@string/fast"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/welcome_LBL_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/default_margin"
+            android:text="@string/speed"
+            android:textSize="@dimen/welcome_option_size" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/speed"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="@dimen/default_margin">
+
+        <androidx.appcompat.widget.AppCompatToggleButton
+            android:id="@+id/toggle_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/light_blue"
+            android:textOff="@string/button"
+            android:textOn="@string/sensor"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/welcome_LBL_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/default_margin"
+            android:text="@string/mode"
+            android:textSize="@dimen/welcome_option_size" />
+
+
+    </LinearLayout>
+
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/welcome_BTN_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="@dimen/default_margin"
+        android:layout_marginVertical="@dimen/default_margin"
+        android:backgroundTint="@color/green_300"
+        android:clickable="true"
+
+        android:text="@string/start"
+        android:textSize="@dimen/welcome_option_size"
+        app:srcCompat="@drawable/hammer" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/welcome_BTN_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome_BTN_play"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="@dimen/default_margin"
+        android:layout_marginVertical="@dimen/default_margin"
+        android:clickable="true"
+        android:text="@string/record"
+        android:textSize="@dimen/welcome_small_option_size" />
+
+
+</RelativeLayout>
